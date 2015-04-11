@@ -1,0 +1,13 @@
+# IntelliJ
+
+*.iml
+
+## Directory-based project format:
+.idea/
+
+# Our folder
+/out/
+
+# User-specific stuff:
+*/.class
+**/.idea/workspace.xml
