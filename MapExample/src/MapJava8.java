@@ -7,15 +7,15 @@ import java.util.stream.Collectors;
  */
 public class MapJava8 {
 
-    public static void main(String args[]){
-
-
-    }
-
     public static List<Integer> powerTest(Integer[] values){
         List<Integer> numbers = Arrays.asList(values);
-        List<Integer> result = numbers.stream().map(n->(n*n)).collect(Collectors.toList());
 
-        return result;
+        return numbers.stream().map(n->(n*n)).collect(Collectors.toList());
+    }
+
+    public static List<String> toUpperCase(List<String> values){
+        return values.stream()
+                .map(String::toUpperCase)
+                .collect(Collectors.toList());
     }
 }
